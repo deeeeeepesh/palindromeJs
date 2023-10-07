@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input type="text" id="pali">
+        <button onclick="checkpalindrome()">SUBMIT TO CHECK IF PALINDROME</button>
+        <script>
+            let pal,len,i,j;
+            function palindrome(pal){
+                len=pal.length;
+                for(i=0;i<len/2;i++)
+                {
+                    if(pal[i]!==pal[len-i-1]){
+                    return "not a palindrome";}
+                    
+                   
+
+                    
+                } return "It is a palindrome";
+            }
+            function checkpalindrome()
+            {
+                pal=document.getElementById("pali").value;
+                console.log(pal);
+            let ans=palindrome(pal);
+            document.write(ans);}
+        </script>
+    </body>
+</html>
